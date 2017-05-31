@@ -1,0 +1,240 @@
+﻿.logo{
+    float:left;
+    max-width:460px;
+    
+
+}
+
+h2{
+    text-align:center;
+    font-weight:700;
+    font-size:40px;
+    margin-top:20px;
+    text-shadow:1px 1px 1px black;
+    color:#ff0000;
+}
+
+#nav{
+    height:168px;
+    background-image:url('/Content/headandgallery.jpg');
+    border-radius:10px;
+    background-color:rgba(255, 255, 255, 0.22);
+    padding: 10px;
+    width:auto;
+}
+
+#addImage{
+    background-color:rgba(255, 255, 255, 0.54);
+    border: 3px white solid;
+    font-size:20px;
+}
+
+body {
+    padding: 20px;
+    background-image: url('/Content/body.jpg');
+}
+
+.menuList{
+    padding:20px;
+}
+
+.pict{
+    position:relative;
+	float:left;  
+	margin:10px; 
+	padding:20px; 
+	background-color: #333cfc; 
+    background-image:url('/Content/headandgallery.jpg');
+	width:70%;
+    border: 3px black solid;
+    border-radius:10px;
+}
+
+.menu {
+	float:left;  
+	margin:10px; 
+	padding:15px; 
+	background-color: rgba(51, 60, 252, 0.66);
+    width: 15%;
+    border-radius:5px;
+}
+
+.pict div.gallery{
+    position:relative;
+    background-color:black;
+    margin: 20px;
+    margin-left: 10px;
+	margin-right: 10px; 
+    float:left;
+    height:220px;
+    width:220px;
+    transition:all 0.5s linear;
+    border: 1px red solid;
+
+    
+}
+
+.pict div.gallery img {
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translate(+50%,-50%);
+	max-width:220px;
+	max-height:220px; 
+    transition:all 0.5s linear;
+}
+
+.pict div.gallery.bigimg{
+    position:relative;
+    float:left;
+    height:490px;
+    width:490px;
+    margin: 20px;
+	margin-left: 10px;
+	margin-right: 10px; 
+    border: 1px red solid;
+    //clear:both;
+}
+
+.pict div.gallery.bigimg img {
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translate(+50%,-50%);
+	max-width:490px;
+	max-height:490px; 
+    clear:both;
+}
+
+#preview {
+    max-height:550px;
+    max-width:550px;
+    background-color:black;
+    margin:15px;
+}
+
+footer {
+    padding-left:20%;
+    padding-right:20%;
+    background-color:gray;
+    /*width:100%;*/
+    clear:both;
+    background-image:url('/Content/headandgallery.jpg');
+     border-radius:10px;
+    font-size:20px;
+}
+
+.tooltip{
+    display:none;
+    position:absolute;
+    top:0px;
+    left:+70px;
+    border: 3px black solid;
+    width:600px;
+    background-color:white;
+
+}
+
+.term{
+    display:inline-block;
+    position:relative;
+    font-weight:600;
+    text-decoration:underline;
+}
+
+.text{
+    font-size:25px;
+    display:inline-block;
+    background-color:rgba(255, 255, 255, 0.54);
+    border: 3px white solid;
+}
+
+.delImg{
+    display:none;
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:25px;
+    height:25px;
+    background-image:url("http://localhost:2047/Content/delete.png");
+}
+
+.nav {
+    float:left;
+    font-size: 34px;
+    border: 3px rgba(216, 216, 216, 0.79) solid;
+    border-radius:2px;
+    text-decoration: none;
+    color:#faa815;
+    background-color: rgba(52, 145, 234, 0.61);
+    text-align:center;
+    font-family:Mistral;
+    font-weight:400;
+    text-shadow: 2px 1px 0 black;
+    margin:15px;
+}
+
+.nav:hover {
+    float:left;
+    font-size: 34px;
+    border: 3px rgba(250, 168, 21, 0.8) solid;
+    border-radius:2px;
+    text-decoration: none;
+    color:#fa7015;
+    background-color: rgba(52, 145, 234, 0.9);
+    text-align:center;
+    font-family:Mistral;
+    font-weight:400;
+    text-shadow: 2px 1px 0 black;
+    margin:15px;
+}
+
+label{
+}
+
+.spoiler{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+}
+
+.spoilerContent{
+    display:none;
+    border:1px black solid;
+    border-radius:3px;
+    margin:5px;
+    text-align:left;
+}
+
+.spoilerBtn{
+    text-align:center;
+    color:red;
+    font-weight:600;
+    font-size:25px;
+    text-decoration:none;
+    margin:10px;
+    transition: 0.2s;
+    padding:5px;
+    text-shadow:1px 1px 1px white;
+}
+
+.spoilerBtn:active{
+    text-align:center;
+    color:red;
+    font-weight:600;
+    font-size:25px;
+    text-decoration:none;
+    margin:10px;
+    background-color:white;
+     border-radius:10px;
+    
+}
+
+.spoilerBtn.Active{
+    font-weight:700;
+    background-color:rgba(51, 60, 252, 0.8);
+    padding:5px;
+    border-radius:10px;
+    
+
+}

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/magic.js"></script>
+    <script src="~/Scripts/hideandshow.js"></script>
+    <link rel="shortcut icon" href="~/Content/иконка.png" type="image/png">
+    <link rel="stylesheet" href="~/Content/css/style.css" />
+</head>
+<body>
+    <div id="nav">
+        <a href="/Home/Index"><img src="/Content/logo.png" class="logo" /></a>
+
+        @Html.ActionLink("Галерея", "Index", null, new { @class = "nav" })
+        @Html.ActionLink("Загрузить картинку", "AddImage", null, new { @class = "nav" })
+        @Html.ActionLink("О One Piece", "AboutOnePiece", null, new { @class = "nav" })
+        <a download="OnePieceLogo.psd" href="~/Content/logo.psd" class="nav">Скачать Лого</a>
+
+    </div>
+    <div id="renderbody">
+        @RenderBody()
+    </div>
+    <footer>
+        <p id="fio">Сулейко Евгений Александрович гр.410901</p>
+        <input type="color" value="#faa815" id="botColor" />
+    </footer>
+</body>
+</html>

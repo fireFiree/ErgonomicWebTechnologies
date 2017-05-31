@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Загрузить картинку";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Загрузить картинку</h2>
+<div id="addImage">
+    @using (Html.BeginForm("AddImage", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div>
+            <p style="font-size:30px;font-weight:500;">Выберите картинку</p>
+            <input type="file" id="file" name="file" multiple accept="image/*" />
+            <input type="text" name="name" id="name" style="display:none" placeholder="Введите имя картинки" />
+            <input type="submit" id="submit" style="display:none" />
+
+        </div>
+        <img id="preview" />
+    }
+</div>
